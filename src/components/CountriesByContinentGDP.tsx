@@ -44,6 +44,7 @@ const CountriesByContinentGDP = () => {
   return (
     <StyledCountriesByContinentGDP>
         <div id="gdpbc" className='w-[90vw] max-w-[1070px] min-h-screen py-8 mx-auto text-white'>
+             <p className='text-white text-center text-2xl mb-10'>Continents By GDP</p>
        <div className="continents">
             {continents.map((items,idx)=>
             {

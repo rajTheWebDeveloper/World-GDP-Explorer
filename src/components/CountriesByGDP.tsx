@@ -63,7 +63,8 @@ const CountriesByGDP = () => {
 
 
   return (
-    <div id='cbgdp' className='min-h-screen w-screen py-20'>
+    <div id='cbgdp' className='min-h-screen w-screen py-10'>
+        <p className='text-white text-center text-2xl mb-6'>Countries By GDP (World)</p>
         <div className="container w-[90vw] max-w-[1070px] flex justify-center items-center mx-auto text-center">
           <BarChart options={options} data={barChartData} className='h-[400px] w-[100%] object-cover'>
             
