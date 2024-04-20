@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import CountriesByGDP from './components/CountriesByGDP';
+import CountriesByGDPTable from './components/CountriesByGDPTable';
+import CountriesByContinentGDP from './components/CountriesByContinentGDP';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App overflow-x-hidden bg-[#000026]">
+      <Navbar/>
+      <Hero/>
+      <CountriesByGDPTable/>
+      <CountriesByGDP/>
+      <CountriesByContinentGDP/>
+      <Footer/>
     </div>
   );
 }
+
+
 
 export default App;
